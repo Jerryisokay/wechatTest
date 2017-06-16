@@ -1,0 +1,9 @@
+<!--info.wxml-->
+<view class="info-list">
+  <view bindtap="openSwiper" wx:for="{{info}}" wx:for-item="listItem" class="list-item">
+    <text>{{listItem.name}}</text>
+    <text>{{listItem.text}}</text>
+    <text>{{listItem.time}}</text>
+  </view>
+</view>
+

@@ -1,0 +1,11 @@
+/* swiper.wxss */
+image{
+  width: 100vw;
+  height: 75vw;
+}
+swiper {
+  height: 75vw
+}
+.onhover {
+  background-color: #ececec;
+}

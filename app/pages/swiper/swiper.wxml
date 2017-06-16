@@ -1,0 +1,14 @@
+<!--swiper.wxml-->
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item bindtap="backtoRoot">
+      <image src="{{item}}" class="slide-image" width="355" height="150"/>
+    </swiper-item>
+  </block>
+</swiper>
+<button bindtap="changeIndicatorDots" hover-class="onhover"> indicator-dots-----{{indicatorDots}} </button>
+<button bindtap="changeAutoplay" hover-class="onhover"> autoplay-----{{autoplay}} </button>
+<button bindtap="changeCircular" hover-class="onhover">circular-----{{circular}} </button>
+<slider bindchange="intervalChange" show-value min="500" max="2000" hover-class="onhover"/> interval
+<slider bindchange="durationChange" show-value min="1000" max="10000" hover-class="onhover"/> duration

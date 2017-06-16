@@ -1,0 +1,8 @@
+/* info.wxss */
+.list-item{
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #ececec;
+  padding: 5px 5px;
+  align-items: left;
+}
